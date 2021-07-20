@@ -1,0 +1,627 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local player = game.Players.LocalPlayer.Character
+local Hackerhub = Instance.new("ScreenGui")
+local main_frame = Instance.new("ImageLabel")
+local shadowHolder = Instance.new("Frame")
+local umbraShadow = Instance.new("ImageLabel")
+local Hub = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local UniversalButton = Instance.new("TextButton")
+local UniversalTAB = Instance.new("Frame")
+local AimbotExecute = Instance.new("ImageButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local Title_2 = Instance.new("TextLabel")
+local Title_3 = Instance.new("TextLabel")
+local Title_4 = Instance.new("TextLabel")
+local Title_5 = Instance.new("TextLabel")
+local NameEspExecute = Instance.new("ImageButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local ClickTpExecute = Instance.new("ImageButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local TriggerbotExecute = Instance.new("ImageButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local BoxEspExecute = Instance.new("ImageButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local Title_6 = Instance.new("TextLabel")
+local FlyExecute = Instance.new("ImageButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local Teleport = Instance.new("TextLabel")
+local injector = Instance.new("TextBox")
+local tpB = Instance.new("TextButton")
+local tpB_Roundify_8px = Instance.new("ImageLabel")
+local Title_7 = Instance.new("TextLabel")
+local KnifeExecute = Instance.new("ImageButton")
+local TextLabel_8 = Instance.new("TextLabel")
+local Title_8 = Instance.new("TextLabel")
+local Ak47Execute = Instance.new("ImageButton")
+local TextLabel_9 = Instance.new("TextLabel")
+local Title_9 = Instance.new("TextLabel")
+local BooomboxExecute = Instance.new("ImageButton")
+local TextLabel_10 = Instance.new("TextLabel")
+local KilllyourselfButton = Instance.new("ImageButton")
+local TextLabel_11 = Instance.new("TextLabel")
+local Title_10 = Instance.new("TextLabel")
+local soon = Instance.new("TextButton")
+local soon_2 = Instance.new("TextButton")
+
+local TPTEXT = "Teleport"
+
+--Properties:
+
+Hackerhub.Name = "Hackerhub"
+Hackerhub.Parent = game.CoreGui
+
+main_frame.Name = "main_frame"
+main_frame.Parent = Hackerhub
+main_frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main_frame.BackgroundTransparency = 1.000
+main_frame.Position = UDim2.new(0.010416666, 0, 0.0171779171, 0)
+main_frame.Size = UDim2.new(0, 567, 0, 347)
+main_frame.Image = "rbxassetid://3570695787"
+main_frame.ImageColor3 = Color3.fromRGB(44, 44, 44)
+main_frame.ScaleType = Enum.ScaleType.Slice
+main_frame.SliceCenter = Rect.new(100, 100, 100, 100)
+main_frame.SliceScale = 0.120
+
+shadowHolder.Name = "shadowHolder"
+shadowHolder.Parent = main_frame
+shadowHolder.BackgroundTransparency = 1.000
+shadowHolder.Size = UDim2.new(1, 0, 1, 0)
+
+umbraShadow.Name = "umbraShadow"
+umbraShadow.Parent = shadowHolder
+umbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+umbraShadow.BackgroundTransparency = 1.000
+umbraShadow.Position = UDim2.new(0.491181672, 0, 0.497118145, 6)
+umbraShadow.Size = UDim2.new(1, 10, 1, 10)
+umbraShadow.Image = "rbxassetid://1316045217"
+umbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+umbraShadow.ImageTransparency = 0.860
+umbraShadow.ScaleType = Enum.ScaleType.Slice
+umbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+Hub.Name = "Hub"
+Hub.Parent = main_frame
+Hub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hub.BackgroundTransparency = 1.000
+Hub.Position = UDim2.new(0.0591179021, 0, -0.0244182255, 0)
+Hub.Size = UDim2.new(0, 82, 0, 50)
+Hub.Font = Enum.Font.GothamBlack
+Hub.Text = "hub"
+Hub.TextColor3 = Color3.fromRGB(255, 170, 0)
+Hub.TextSize = 15.000
+
+TextLabel.Parent = main_frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.00131938607, 0, 0.0265967548, 0)
+TextLabel.Size = UDim2.new(0, 72, 0, 15)
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.Text = "Hacker"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 15.000
+
+UniversalButton.Name = "UniversalButton"
+UniversalButton.Parent = main_frame
+UniversalButton.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+UniversalButton.BorderColor3 = Color3.fromRGB(27, 27, 27)
+UniversalButton.Position = UDim2.new(0.0405643731, 0, 0.093268685, 0)
+UniversalButton.Size = UDim2.new(0, 96, 0, 27)
+UniversalButton.Font = Enum.Font.Gotham
+UniversalButton.Text = "Universal"
+UniversalButton.TextColor3 = Color3.fromRGB(182, 182, 182)
+UniversalButton.TextSize = 14.000
+UniversalButton.TextWrapped = true
+
+UniversalTAB.Name = "UniversalTAB"
+UniversalTAB.Parent = main_frame
+UniversalTAB.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+UniversalTAB.BorderColor3 = Color3.fromRGB(27, 27, 27)
+UniversalTAB.Position = UDim2.new(0.0405643731, 0, 0.173960313, 0)
+UniversalTAB.Size = UDim2.new(0, 521, 0, 267)
+
+AimbotExecute.Name = "AimbotExecute"
+AimbotExecute.Parent = UniversalTAB
+AimbotExecute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimbotExecute.BackgroundTransparency = 1.000
+AimbotExecute.Position = UDim2.new(0.819975078, 0, 0.199700385, 0)
+AimbotExecute.Size = UDim2.new(0, 74, 0, 20)
+AimbotExecute.Image = "rbxassetid://2790382281"
+AimbotExecute.ImageColor3 = Color3.fromRGB(35, 35, 35)
+AimbotExecute.ScaleType = Enum.ScaleType.Slice
+AimbotExecute.SliceCenter = Rect.new(4, 4, 252, 252)
+AimbotExecute.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/SlenderModzZ/Neighborhood-war-OLD-gui/main/Aimbot"),true))()
+	end)
+
+TextLabel_2.Parent = AimbotExecute
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(0, 74, 0, 20)
+TextLabel_2.Font = Enum.Font.Gotham
+TextLabel_2.Text = "Execute"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 13.000
+
+Title.Name = "Title"
+Title.Parent = UniversalTAB
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.829979539, 0, 0.119999997, 0)
+Title.Size = UDim2.new(0, 64, 0, 14)
+Title.Font = Enum.Font.GothamSemibold
+Title.Text = "Aimbot"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 14.000
+
+Title_2.Name = "Title"
+Title_2.Parent = UniversalTAB
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0.837657094, 0, 0.374681652, 0)
+Title_2.Size = UDim2.new(0, 64, 0, 14)
+Title_2.Font = Enum.Font.GothamSemibold
+Title_2.Text = "Triggerbot"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextSize = 14.000
+
+Title_3.Name = "Title"
+Title_3.Parent = UniversalTAB
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.Position = UDim2.new(0.829979539, 0, 0.674307108, 0)
+Title_3.Size = UDim2.new(0, 64, 0, 14)
+Title_3.Font = Enum.Font.GothamSemibold
+Title_3.Text = "Box ESP"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextSize = 14.000
+
+Title_4.Name = "Title"
+Title_4.Parent = UniversalTAB
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BackgroundTransparency = 1.000
+Title_4.Position = UDim2.new(0.618847132, 0, 0.120000005, 0)
+Title_4.Size = UDim2.new(0, 64, 0, 14)
+Title_4.Font = Enum.Font.GothamSemibold
+Title_4.Text = "Name ESP"
+Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextSize = 14.000
+
+Title_5.Name = "Title"
+Title_5.Parent = UniversalTAB
+Title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.BackgroundTransparency = 1.000
+Title_5.Position = UDim2.new(0.616927743, 0, 0.374681652, 0)
+Title_5.Size = UDim2.new(0, 64, 0, 14)
+Title_5.Font = Enum.Font.GothamSemibold
+Title_5.Text = "Click tp"
+Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.TextSize = 14.000
+
+NameEspExecute.Name = "NameEspExecute"
+NameEspExecute.Parent = UniversalTAB
+NameEspExecute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NameEspExecute.BackgroundTransparency = 1.000
+NameEspExecute.Position = UDim2.new(0.608842611, 0, 0.199700385, 0)
+NameEspExecute.Size = UDim2.new(0, 74, 0, 20)
+NameEspExecute.Image = "rbxassetid://2790382281"
+NameEspExecute.ImageColor3 = Color3.fromRGB(35, 35, 35)
+NameEspExecute.ScaleType = Enum.ScaleType.Slice
+NameEspExecute.SliceCenter = Rect.new(4, 4, 252, 252)
+NameEspExecute.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/SlenderModzZ/Hackerhub-new/main/NameEsp"),true))()
+	end)
+
+TextLabel_3.Parent = NameEspExecute
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Size = UDim2.new(0, 74, 0, 20)
+TextLabel_3.Font = Enum.Font.Gotham
+TextLabel_3.Text = "Execute"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 13.000
+
+ClickTpExecute.Name = "ClickTpExecute"
+ClickTpExecute.Parent = UniversalTAB
+ClickTpExecute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ClickTpExecute.BackgroundTransparency = 1.000
+ClickTpExecute.Position = UDim2.new(0.608842611, 0, 0.461872667, 0)
+ClickTpExecute.Size = UDim2.new(0, 74, 0, 20)
+ClickTpExecute.Image = "rbxassetid://2790382281"
+ClickTpExecute.ImageColor3 = Color3.fromRGB(35, 35, 35)
+ClickTpExecute.ScaleType = Enum.ScaleType.Slice
+ClickTpExecute.SliceCenter = Rect.new(4, 4, 252, 252)
+ClickTpExecute.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/SlenderModzZ/Neighborhood-war-OLD-gui/main/click%20tp"),true))()
+	end)
+
+TextLabel_4.Parent = ClickTpExecute
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Size = UDim2.new(0, 74, 0, 20)
+TextLabel_4.Font = Enum.Font.Gotham
+TextLabel_4.Text = "Execute"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 13.000
+
+TriggerbotExecute.Name = "TriggerbotExecute"
+TriggerbotExecute.Parent = UniversalTAB
+TriggerbotExecute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TriggerbotExecute.BackgroundTransparency = 1.000
+TriggerbotExecute.Position = UDim2.new(0.829571962, 0, 0.461872667, 0)
+TriggerbotExecute.Size = UDim2.new(0, 74, 0, 20)
+TriggerbotExecute.Image = "rbxassetid://2790382281"
+TriggerbotExecute.ImageColor3 = Color3.fromRGB(35, 35, 35)
+TriggerbotExecute.ScaleType = Enum.ScaleType.Slice
+TriggerbotExecute.SliceCenter = Rect.new(4, 4, 252, 252)
+TriggerbotExecute.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/SlenderModzZ/Neighborhood-war-OLD-gui/main/Triggerbot"),true))()
+end)
+
+TextLabel_5.Parent = TriggerbotExecute
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Size = UDim2.new(0, 74, 0, 20)
+TextLabel_5.Font = Enum.Font.Gotham
+TextLabel_5.Text = "Execute"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 13.000
+
+BoxEspExecute.Name = "BoxEspExecute"
+BoxEspExecute.Parent = UniversalTAB
+BoxEspExecute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BoxEspExecute.BackgroundTransparency = 1.000
+BoxEspExecute.Position = UDim2.new(0.819975019, 0, 0.750262141, 0)
+BoxEspExecute.Size = UDim2.new(0, 74, 0, 20)
+BoxEspExecute.Image = "rbxassetid://2790382281"
+BoxEspExecute.ImageColor3 = Color3.fromRGB(35, 35, 35)
+BoxEspExecute.ScaleType = Enum.ScaleType.Slice
+BoxEspExecute.SliceCenter = Rect.new(4, 4, 252, 252)
+BoxEspExecute.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/SlenderModzZ/Neighborhood-war-OLD-gui/main/esp"),true))()
+	end)
+
+TextLabel_6.Parent = BoxEspExecute
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Size = UDim2.new(0, 74, 0, 20)
+TextLabel_6.Font = Enum.Font.Gotham
+TextLabel_6.Text = "Execute"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 13.000
+
+Title_6.Name = "Title"
+Title_6.Parent = UniversalTAB
+Title_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_6.BackgroundTransparency = 1.000
+Title_6.Position = UDim2.new(0.616927743, 0, 0.674307108, 0)
+Title_6.Size = UDim2.new(0, 64, 0, 14)
+Title_6.Font = Enum.Font.GothamSemibold
+Title_6.Text = "Fly"
+Title_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_6.TextSize = 14.000
+
+FlyExecute.Name = "FlyExecute"
+FlyExecute.Parent = UniversalTAB
+FlyExecute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FlyExecute.BackgroundTransparency = 1.000
+FlyExecute.Position = UDim2.new(0.608842611, 0, 0.746516824, 0)
+FlyExecute.Size = UDim2.new(0, 74, 0, 20)
+FlyExecute.Image = "rbxassetid://2790382281"
+FlyExecute.ImageColor3 = Color3.fromRGB(35, 35, 35)
+FlyExecute.ScaleType = Enum.ScaleType.Slice
+FlyExecute.SliceCenter = Rect.new(4, 4, 252, 252)
+FlyExecute.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/SlenderModzZ/Hackerhub-new/main/Fly"),true))()
+	end)
+
+TextLabel_7.Parent = FlyExecute
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Size = UDim2.new(0, 74, 0, 20)
+TextLabel_7.Font = Enum.Font.Gotham
+TextLabel_7.Text = "Execute"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 13.000
+
+Teleport.Name = "Teleport"
+Teleport.Parent = UniversalTAB
+Teleport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Teleport.BackgroundTransparency = 1.000
+Teleport.Position = UDim2.new(0.33477807, 0, 0.146217242, 0)
+Teleport.Size = UDim2.new(0, 64, 0, 14)
+Teleport.Font = Enum.Font.GothamSemibold
+Teleport.Text = "Teleport to player"
+Teleport.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleport.TextSize = 14.000
+
+injector.Name = "injector"
+injector.Parent = UniversalTAB
+injector.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+injector.BorderColor3 = Color3.fromRGB(70, 70, 70)
+injector.Position = UDim2.new(0.268714011, 0, 0.239700377, 0)
+injector.Size = UDim2.new(0, 134, 0, 28)
+injector.Font = Enum.Font.GothamSemibold
+injector.Text = ""
+injector.TextColor3 = Color3.fromRGB(255, 255, 255)
+injector.TextSize = 14.000
+injector.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+tpB.Name = "tpB"
+tpB.Parent = UniversalTAB
+tpB.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+tpB.BackgroundTransparency = 1.000
+tpB.BorderColor3 = Color3.fromRGB(31, 31, 31)
+tpB.BorderSizePixel = 0
+tpB.Position = UDim2.new(0.302148461, 0, 0.424419492, 0)
+tpB.Size = UDim2.new(0, 98, 0, 29)
+tpB.ZIndex = 2
+tpB.Font = Enum.Font.GothamSemibold
+tpB.Text = TPTEXT
+tpB.TextColor3 = Color3.fromRGB(255, 255, 255)
+tpB.TextSize = 12.000
+
+tpB_Roundify_8px.Name = "tpB_Roundify_8px"
+tpB_Roundify_8px.Parent = tpB
+tpB_Roundify_8px.Active = true
+tpB_Roundify_8px.AnchorPoint = Vector2.new(0.5, 0.5)
+tpB_Roundify_8px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tpB_Roundify_8px.BackgroundTransparency = 1.000
+tpB_Roundify_8px.Position = UDim2.new(0.5, 0, 0.5, 0)
+tpB_Roundify_8px.Selectable = true
+tpB_Roundify_8px.Size = UDim2.new(1, 0, 1, 0)
+tpB_Roundify_8px.Image = "rbxassetid://3570695787"
+tpB_Roundify_8px.ImageColor3 = Color3.fromRGB(31, 31, 31)
+tpB_Roundify_8px.ScaleType = Enum.ScaleType.Slice
+tpB_Roundify_8px.SliceCenter = Rect.new(100, 100, 100, 100)
+tpB_Roundify_8px.SliceScale = 0.080
+
+Title_7.Name = "Title"
+Title_7.Parent = UniversalTAB
+Title_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_7.BackgroundTransparency = 1.000
+Title_7.Position = UDim2.new(0.0545477271, 0, 0.116254687, 0)
+Title_7.Size = UDim2.new(0, 64, 0, 14)
+Title_7.Font = Enum.Font.GothamSemibold
+Title_7.Text = "Knife non fe"
+Title_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_7.TextSize = 14.000
+
+KnifeExecute.Name = "KnifeExecute"
+KnifeExecute.Parent = UniversalTAB
+KnifeExecute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KnifeExecute.BackgroundTransparency = 1.000
+KnifeExecute.Position = UDim2.new(0.040704377, 0, 0.199700356, 0)
+KnifeExecute.Size = UDim2.new(0, 74, 0, 20)
+KnifeExecute.Image = "rbxassetid://2790382281"
+KnifeExecute.ImageColor3 = Color3.fromRGB(35, 35, 35)
+KnifeExecute.ScaleType = Enum.ScaleType.Slice
+KnifeExecute.SliceCenter = Rect.new(4, 4, 252, 252)
+KnifeExecute.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://pastebin.com/raw/HVNeA0gP"),true))()
+	end)
+
+TextLabel_8.Parent = KnifeExecute
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Size = UDim2.new(0, 74, 0, 20)
+TextLabel_8.Font = Enum.Font.Gotham
+TextLabel_8.Text = "Execute"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 13.000
+
+Title_8.Name = "Title"
+Title_8.Parent = UniversalTAB
+Title_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_8.BackgroundTransparency = 1.000
+Title_8.Position = UDim2.new(0.0545477271, 0, 0.374681652, 0)
+Title_8.Size = UDim2.new(0, 64, 0, 14)
+Title_8.Font = Enum.Font.GothamSemibold
+Title_8.Text = "Ak47 non fe"
+Title_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_8.TextSize = 14.000
+
+Ak47Execute.Name = "Ak47Execute"
+Ak47Execute.Parent = UniversalTAB
+Ak47Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ak47Execute.BackgroundTransparency = 1.000
+Ak47Execute.Position = UDim2.new(0.040704377, 0, 0.461872637, 0)
+Ak47Execute.Size = UDim2.new(0, 74, 0, 20)
+Ak47Execute.Image = "rbxassetid://2790382281"
+Ak47Execute.ImageColor3 = Color3.fromRGB(35, 35, 35)
+Ak47Execute.ScaleType = Enum.ScaleType.Slice
+Ak47Execute.SliceCenter = Rect.new(4, 4, 252, 252)
+Ak47Execute.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://pastebin.com/raw/MZ3amPxX"),true))()
+	end)
+
+TextLabel_9.Parent = Ak47Execute
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Size = UDim2.new(0, 74, 0, 20)
+TextLabel_9.Font = Enum.Font.Gotham
+TextLabel_9.Text = "Execute"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextSize = 13.000
+
+Title_9.Name = "Title"
+Title_9.Parent = UniversalTAB
+Title_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_9.BackgroundTransparency = 1.000
+Title_9.Position = UDim2.new(0.0545477271, 0, 0.674307108, 0)
+Title_9.Size = UDim2.new(0, 64, 0, 14)
+Title_9.Font = Enum.Font.GothamSemibold
+Title_9.Text = "Noclip"
+Title_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_9.TextSize = 14.000
+
+BooomboxExecute.Name = "BooomboxExecute"
+BooomboxExecute.Parent = UniversalTAB
+BooomboxExecute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BooomboxExecute.BackgroundTransparency = 1.000
+BooomboxExecute.Position = UDim2.new(0.040704377, 0, 0.746516824, 0)
+BooomboxExecute.Size = UDim2.new(0, 74, 0, 20)
+BooomboxExecute.Image = "rbxassetid://2790382281"
+BooomboxExecute.ImageColor3 = Color3.fromRGB(35, 35, 35)
+BooomboxExecute.ScaleType = Enum.ScaleType.Slice
+BooomboxExecute.SliceCenter = Rect.new(4, 4, 252, 252)
+BooomboxExecute.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://pastebin.com/raw/1Vf6NFjL"),true))()
+	end)
+
+TextLabel_10.Parent = BooomboxExecute
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Size = UDim2.new(0, 74, 0, 20)
+TextLabel_10.Font = Enum.Font.Gotham
+TextLabel_10.Text = "Execute"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextSize = 13.000
+
+KilllyourselfButton.Name = "KilllyourselfButton"
+KilllyourselfButton.Parent = UniversalTAB
+KilllyourselfButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KilllyourselfButton.BackgroundTransparency = 1.000
+KilllyourselfButton.Position = UDim2.new(0.320934743, 0, 0.750262141, 0)
+KilllyourselfButton.Size = UDim2.new(0, 74, 0, 20)
+KilllyourselfButton.Image = "rbxassetid://2790382281"
+KilllyourselfButton.ImageColor3 = Color3.fromRGB(35, 35, 35)
+KilllyourselfButton.ScaleType = Enum.ScaleType.Slice
+KilllyourselfButton.SliceCenter = Rect.new(4, 4, 252, 252)
+KilllyourselfButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://pastebin.com/raw/KFfczcRF"),true))()
+	end)
+
+TextLabel_11.Parent = KilllyourselfButton
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Size = UDim2.new(0, 74, 0, 20)
+TextLabel_11.Font = Enum.Font.Gotham
+TextLabel_11.Text = "Execute"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextSize = 13.000
+
+Title_10.Name = "Title"
+Title_10.Parent = UniversalTAB
+Title_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_10.BackgroundTransparency = 1.000
+Title_10.Position = UDim2.new(0.329019874, 0, 0.674307108, 0)
+Title_10.Size = UDim2.new(0, 64, 0, 14)
+Title_10.Font = Enum.Font.GothamSemibold
+Title_10.Text = "Kill yourself"
+Title_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_10.TextSize = 14.000
+
+soon.Name = "soon..."
+soon.Parent = main_frame
+soon.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+soon.BorderColor3 = Color3.fromRGB(27, 27, 27)
+soon.Position = UDim2.new(0.580246925, 0, 0.093268685, 0)
+soon.Size = UDim2.new(0, 96, 0, 27)
+soon.Font = Enum.Font.Gotham
+soon.Text = "soon..."
+soon.TextColor3 = Color3.fromRGB(182, 182, 182)
+soon.TextSize = 14.000
+soon.TextWrapped = true
+
+soon_2.Name = "soon..."
+soon_2.Parent = main_frame
+soon_2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+soon_2.BorderColor3 = Color3.fromRGB(27, 27, 27)
+soon_2.Position = UDim2.new(0.317460299, 0, 0.093268685, 0)
+soon_2.Size = UDim2.new(0, 96, 0, 27)
+soon_2.Font = Enum.Font.Gotham
+soon_2.Text = "soon..."
+soon_2.TextColor3 = Color3.fromRGB(182, 182, 182)
+soon_2.TextSize = 14.000
+soon_2.TextWrapped = true
+
+for _, playerss in pairs(game.Players:GetChildren()) do
+	print("("..playerss.Name..  ") <-- 5C_G WROTE THIS")
+end
+
+
+tpB.Activated:Connect(function()
+	for _, players in pairs(game.Players:GetChildren()) do
+		if injector.Text == players.Name then
+			local playerChar = players.Character
+			local playerHMRP = playerChar.HumanoidRootPart
+
+			player.HumanoidRootPart.CFrame = playerHMRP.CFrame
+
+		end
+		if injector.Text == "5C_G" then
+			print("SORRY YOU WONT TP TO THE CREATOR OF THE SCRIPT LOLOLOL") -- made this for fun 
+		end
+	end
+end) -- Script for teleporting
+
+
+-- Scripts:
+
+local function ENVALSH_fake_script() -- main_frame.SmoothDrag 
+	local script = Instance.new('LocalScript', main_frame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 5
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(1), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+end
+coroutine.wrap(ENVALSH_fake_script)()
+local function JYXNR_fake_script() -- main_frame.RightCtrlToOpenAndClose 
+	local script = Instance.new('LocalScript', main_frame)
+
+	local MainFrame = script.Parent
+
+	local UserInputService = game:GetService("UserInputService")
+
+	UserInputService.InputBegan:Connect(function(keyCode)
+		if keyCode.keyCode == Enum.KeyCode.RightControl then
+			if Open then
+				MainFrame.Visible = false
+				Open = false
+			else
+				Open = true
+				MainFrame.Visible = true
+			end
+		end
+	end)
+end
+coroutine.wrap(JYXNR_fake_script)()
