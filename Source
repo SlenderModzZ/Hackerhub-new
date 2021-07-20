@@ -1,9 +1,16 @@
--- Gui to Lua
--- Version: 3.2
+-- Made by SlenderModzZ--
+
+                      --Important--
+--This script is not 100% from me I used some scripts from others 
+--If you want credits from the creators then you are wrong here
+--I don't make any credit because this is just a small script for me and my friends
+--if you want to buy MZ unlock alls then join https://discord.gg/ttbTjttYVq
+                      --have fun--
+
 
 -- Instances:
 
-local player = game.Players.LocalPlayer.Character
+local player = game.Players.LocalPlayer.Character --Makes the script work
 local Hackerhub = Instance.new("ScreenGui")
 local main_frame = Instance.new("ImageLabel")
 local shadowHolder = Instance.new("Frame")
@@ -49,12 +56,12 @@ local Title_10 = Instance.new("TextLabel")
 local soon = Instance.new("TextButton")
 local soon_2 = Instance.new("TextButton")
 
-local TPTEXT = "Teleport"
+local TPTEXT = "Teleport" --Prints on the button teleport
 
 --Properties:
 
 Hackerhub.Name = "Hackerhub"
-Hackerhub.Parent = game.CoreGui
+Hackerhub.Parent = game.CoreGui --Makes the gui working
 
 main_frame.Name = "main_frame"
 main_frame.Parent = Hackerhub
@@ -68,7 +75,7 @@ main_frame.ScaleType = Enum.ScaleType.Slice
 main_frame.SliceCenter = Rect.new(100, 100, 100, 100)
 main_frame.SliceScale = 0.120
 
-shadowHolder.Name = "shadowHolder"
+shadowHolder.Name = "shadowHolder"  --Shadows
 shadowHolder.Parent = main_frame
 shadowHolder.BackgroundTransparency = 1.000
 shadowHolder.Size = UDim2.new(1, 0, 1, 0)
@@ -541,7 +548,7 @@ soon_2.TextColor3 = Color3.fromRGB(182, 182, 182)
 soon_2.TextSize = 14.000
 soon_2.TextWrapped = true
 
-for _, playerss in pairs(game.Players:GetChildren()) do
+for _, playerss in pairs(game.Players:GetChildren()) do --Script for teleport
 	print("("..playerss.Name..  ") <-- 5C_G WROTE THIS")
 end
 
@@ -555,11 +562,11 @@ tpB.Activated:Connect(function()
 			player.HumanoidRootPart.CFrame = playerHMRP.CFrame
 
 		end
-		if injector.Text == "5C_G" then
-			print("SORRY YOU WONT TP TO THE CREATOR OF THE SCRIPT LOLOLOL") -- made this for fun 
+		if injector.Text == "FlussEnzym0" then
+			print("SORRY YOU WONT TP TO THE CREATOR OF THE SCRIPT LOLOLOL ") -- Makes that someone can't tp to you
 		end
 	end
-end) -- Script for teleporting
+end) 
 
 
 -- Scripts:
